@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background-color: black;
+            color: white;
+            display: flex;
+            padding-left: 10px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header p {
+            font-weight: bold;
+            font-size: 50px;
+        }
+        header nav {
+            color: white;
+            font-size: 20px;
+            display: flex;
+            gap: 20px;
+            padding-right: 20px;
+            
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .title{
+            
+            text-align: center;
+            font-size: 29px;
+            font-weight: bold;
+            margin-bottom: ;
+        }
+
+        .field {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            align-items: center;
+        }
+        input[type=text] {
+            width: 300px;
+        }
+        
+        
+        .des-checkin {
+            
+        }
+        input[type=date] {
+            width: 300px;
+        }
+        .des-checkout {
+            
+        }
+        .des-guest {
+            padding-right: 8px;
+            
+        }
+        input[type=number] {
+            width: 290px;
+            background-color: lightgrey;
+        }
+        input[type=submit] {
+            margin-right: 239px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            width: 70px;
+            height: 30px;
+        }
+        header {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>Hotel Search</p>
+        <nav>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </nav>
+    </header>
+
+    <body>
+        <p class="title">Find the Perfect Hotel for you</p>
+        <form class="field">
+            <div class="des-field">
+                 <label for="destination">Destination</label><br>
+
+                <input type="text" name="destination" id="destination" placeholder="Enter a city" >
+            </div>
+            <div class="des-checkin">
+                <label for="checkin">Check-In:</label><br>
+                <input type="date" name="check-in">
+            </div>
+            <div class="des-checkout">
+                <label for="checkout">Check-Out</label><br>
+                <input type="date" name="checkout">
+            </div>
+            <div class="des-guest">
+                <label for="guest">Guests</label><br>
+                <input type="number" value="1">
+
+            </div>
+            
+            <div>
+                <input type="submit" value="Search">
+            </div>
+        </form>
+        
+    </body>
+    <footer class="header">
+        <p>&copy; 2023 Hotel Search. All rights reserved.</p>
+    </footer>
+</body>
+</html>

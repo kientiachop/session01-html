@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            background: green;
+            
+        }
+        .btn::before{
+            display: block;
+            content: "login";
+            position: absolute;
+            width: 0;
+            left: 0;
+            transition: all 2s;
+            background-color: red;
+        
+           
+            
+        }
+
+        .btn-1 {
+            position: relative;
+            margin: 10px;
+            width: 100px;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            background-color: tomato;
+        }
+    
+        .btn-1 span:nth-child(1) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 5px;
+            background-color: green;
+            transition: all 2s linear 1s;
+
+            
+        }
+        .btn-1:hover span:nth-child(1){
+            width: 100%;
+        }
+        
+        .btn-1 span:nth-child(2) {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 5px;
+            height: 0;
+            background-color: green;
+            transition: all 2s linear 2.75s;
+
+        }
+        .btn-1:hover span:nth-child(2) {
+            height: 100%;
+        }
+        .btn span:nth-child(3) {
+            position: absolute;
+            top: 0px;
+            left: 5px;
+            width: 0px;
+            height: 5px;
+            transition: all 2s linear 1s;
+        }
+        .btn-1:hover span:nth-child(2) {
+            width: 100%;
+    </style>
+</head>
+<body>
+    <button class="btn">login</button>
+    <br>
+    <button class="btn-1">
+        register
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+    </button>
+</body>
+</html>

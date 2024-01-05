@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+     // Bai Tap 1
+        // let number = prompt("Hãy nhập số đầu tiên:");
+        // let array = [];
+        // let min = 0;
+        // function timSoNhoNhat(number){
+        //     array.push(Number(number));
+        //     number = prompt("Hãy nhập số thứ 2:");
+        //     array.push(Number(number));
+        //     number = prompt("Hãy nhập số thứ 3:");
+        //     array.push(Number(number));
+        //     min = array[0];
+        //     for(let i = 0; i < array.length; i++){
+        //         if(min > array[i]){
+        //             min = array[i];
+        //         }
+        //     }
+        // }
+        // timSoNhoNhat(number);
+        
+        // document.write(min);
+        // Bai Tap 2
+        // let number = prompt("Hãy nhập số một số bất kì:");
+        // let count = 0;
+        // function kiemTra(a){
+            // số nguyên tố là số chỉ chia hết cho 1 và chính nó. ngoài ra không chia hết cho số nào cả.
+            // bắt đầu từ số 2,3,5,7,11
+        //     if (a<2){
+        //         console.log(`${a} không phải là số nguyên tố`);
+        //         return;
+        //     }
+        //     for(let i = 1; i <= a / 2; i++){
+        //         if(a % i == 0){
+        //             count++
+        //         }
+        //     }
+        //     if(count==2) {
+        //         console.log(`${a} là số nguyên tố`);
+        //     }else {
+        //         console.log(`${a} không phải số nguyên tố`);
+        //     }
+        // }
+        // kiemTra(number);
+        
+        // Bai tap 3
+        // let number = prompt("Hãy nhập 1 số bất kì:");
+        // function tinhGiaiThua(n) {
+        //     if (n === 0 || n === 1) {
+        //         return 1;
+        //     } else {
+        //         return n * tinhGiaiThua(n-1);
+        //     }
+        // }
+        // let result = tinhGiaiThua(number);
+        // document.write(result);
+        // Bai tap 4
+        // let array=[1,2,3,4,5,6,7,8,9,10];
+        // let total = 0;
+        // let result = [];
+        // function timCapSoCoTongLa10(){
+        //     Cach 1
+        //     for(let i = 0; i < array.length - 1; i++){
+        //         for(let j = i + 1; j < array.length; j++){
+        //             let temp = array[i] + array[j];
+        //             if(temp == 10){
+        //                 total++;
+        //                 result.push(array[i],array[j]);
+        //             }
+        //         }
+        //     }
+        //     }
+        // timCapSoCoTongLa10();
+        // document.write(total);
+        // Bai Tap 5
+        // let input = prompt("Hãy nhập câu bất kì:");
+        // function chuoiKiTu(input) {
+        //     let chuoi = {};
+
+        //     for (let i = 0; i < input.length; i++) {
+        //         let char = input[i];
+        //         console.log(input[i]);
+
+        //         if (chuoi[char]) {
+        //             chuoi[char]++;
+        //         } else {
+        //             chuoi[char] = 1;
+        //         }
+        //     }
+
+        //     for (let char in chuoi) {
+        //         document.write(`Ký tự '${char}' xuất hiện ${chuoi[char]} lần` + "<br>");
+        //     }
+        // }
+        // chuoiKiTu(input);
+
+
+
+        /* 
+        let a = "hello world";
+        let b = a.split(""); 
+        function tanSuat(array) {
+            for (let i = 0; i <array.length;i++) {
+                let s = 1;
+                for (let j = i + 1; j <array.length; j++) {
+                    if (array [i].toLowerCase() == array[j].toLowerCase()) {
+                        s++;
+                        array.splice(j,1)
+                    }
+                }
+                console.log("ký tự",array[i],"xuất hiện", s, "lần");
+            }
+        }
+        tanSuat(b);
+            */
+  </script>
+</body>
+</html>

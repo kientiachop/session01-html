@@ -1,0 +1,15 @@
+.form {
+    position: absolute;
+    background-color: red;
+    width: 300px;
+}
+input {
+    width: 70%;
+    
+}
+
+.eyes {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
